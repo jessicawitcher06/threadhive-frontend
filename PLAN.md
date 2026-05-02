@@ -62,7 +62,7 @@ This plan follows the assignment sequence and separates manual implementation (P
 - [x] Add Header navigation entry for Reset Password.
 - [x] Add `App.jsx` conditional rendering for reset password page.
 - [ ] Test mismatch and success flows in browser.
-- [ ] Commit: `feat: add reset password page and navigation`
+- [x] Commit: `feat: add reset password page and navigation`
 
 ## 6. Part 2 (AI-Assisted): Multimodal Styling
 - [ ] Attach `resources/login-screenshot.png` in Agent Mode and prompt layout-based redesign of Login page.
