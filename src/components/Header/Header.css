@@ -2,9 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
-  padding: 12px 24px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 14px 28px;
+  background-color: #fbfcff;
+  border-bottom: 1px solid #d5deea;
+  box-shadow: 0 2px 8px rgba(10, 29, 46, 0.07);
 }
 
 .header-left h1 {
@@ -12,22 +13,71 @@
   font-size: 1.5rem;
 }
 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Base button reset */
 .header-right button {
-  margin-left: 12px;
-  padding: 8px 14px;
-  font-weight: bold;
-  background-color: rgb(58, 58, 211);
-  color: white;
-  border: none;
-  border-radius: 4px;
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 1rem;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
 
-.header-right button:hover {
-  background-color: blue;
+/* Login — outlined */
+.header-right button:nth-child(1) {
+  background-color: transparent;
+  color: #0f4c81;
+  border: 2px solid #0f4c81;
 }
 
-.title{
-  color: rgb(58, 58, 211);
+.header-right button:nth-child(1):hover {
+  background-color: #0f4c81;
+  color: #fff;
+}
+
+/* Register — solid primary */
+.header-right button:nth-child(2) {
+  background-color: #0f4c81;
+  color: #fff;
+  border: 2px solid #0f4c81;
+}
+
+.header-right button:nth-child(2):hover {
+  background-color: #0b355a;
+  border-color: #0b355a;
+}
+
+/* Reset Password — subtle ghost */
+.header-right button:nth-child(3) {
+  background-color: transparent;
+  color: #5d6670;
+  border: 2px solid #c9d2dd;
+}
+
+.header-right button:nth-child(3):hover {
+  border-color: #0f4c81;
+  color: #0f4c81;
+}
+
+/* Logout (when isAuthenticated = true) */
+.header-right button:only-child {
+  background-color: #0f4c81;
+  color: #fff;
+  border: 2px solid #0f4c81;
+}
+
+.header-right button:only-child:hover {
+  background-color: #0b355a;
+  border-color: #0b355a;
+}
+
+.title {
+  color: #0f4c81;
+  font-family: Georgia, "Times New Roman", serif;
 }
