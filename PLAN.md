@@ -71,7 +71,7 @@ This plan follows the assignment sequence and separates manual implementation (P
 - [x] Adapt changes to existing CSS Modules structure.
 - [x] Follow-up multimodal goal: move labels into placeholders while retaining styling intent.
 - [ ] Verify desktop and mobile layout behavior.
-- [ ] Commit: `style: redesign login page from visual reference`
+- [x] Commit: `style: redesign login page from visual reference`
 
 ## 7. Part 2 (AI-Assisted): Testing Agent + Unit Tests
 - [ ] Create custom agent via:
