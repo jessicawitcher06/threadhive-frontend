@@ -87,9 +87,9 @@ This plan follows the assignment sequence and separates manual implementation (P
 - [x] Commit: `test: add auth component unit tests`
 
 ## 8. Final Validation Checklist
-- [ ] Run app and manually verify navigation and form flows.
-- [ ] Run tests and confirm passing results.
-- [ ] Ensure meaningful commit history for each milestone.
+- [x] Run app and manually verify navigation and form flows.
+- [x] Run tests and confirm passing results. (5/5 passing)
+- [x] Ensure meaningful commit history for each milestone.
 - [ ] Push final code and submit.
 
 ## Recommended Commit Order
