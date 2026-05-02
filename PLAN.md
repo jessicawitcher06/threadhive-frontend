@@ -20,26 +20,26 @@ This plan follows the assignment sequence and separates manual implementation (P
 - [x] Commit: `feat: implement manual login form`
 
 ## 2. Part 1 (Manual): Header and Footer
-- [ ] Create `Header` component in `components/Header/Header.jsx`.
-- [ ] Accept `onNavigate` callback prop from `App.jsx`.
-- [ ] Add temporary `isAuthenticated = false` logic:
-  - [ ] show Login + Register when false
-  - [ ] show Logout when true
-- [ ] Wire button navigation:
-  - [ ] Login -> `onNavigate('login')`
-  - [ ] Register -> `onNavigate('register')`
-  - [ ] Logout -> `onNavigate('login')`
-- [ ] Create `Footer` component in `components/Footer/Footer.jsx` with current year copyright.
+- [x] Create `Header` component in `components/Header/Header.jsx`.
+- [x] Accept `onNavigate` callback prop from `App.jsx`.
+- [x] Add temporary `isAuthenticated = false` logic:
+  - [x] show Login + Register when false
+  - [x] show Logout when true
+- [x] Wire button navigation:
+  - [x] Login -> `onNavigate('login')`
+  - [x] Register -> `onNavigate('register')`
+  - [x] Logout -> `onNavigate('login')`
+- [x] Create `Footer` component in `components/Footer/Footer.jsx` with current year copyright.
 - [ ] Verify Header button behavior.
 - [ ] Commit: `feat: add header and footer components`
 
 ## 3. Part 1 (Manual): App Conditional Rendering
-- [ ] In `App.jsx`, create `currentPage` state with `useState`.
-- [ ] Render `Header` and pass `setCurrentPage` via `onNavigate`.
-- [ ] Conditionally render pages:
-  - [ ] `login` -> `<Login />`
-  - [ ] `register` -> `<Register />`
-- [ ] Render `Footer` at the bottom of layout.
+- [x] In `App.jsx`, create `currentPage` state with `useState`.
+- [x] Render `Header` and pass `setCurrentPage` via `onNavigate`.
+- [x] Conditionally render pages:
+  - [x] `login` -> `<Login />`
+  - [x] `register` -> `<Register />`
+- [x] Render `Footer` at the bottom of layout.
 - [ ] Verify navigation between Login and Register.
 - [ ] Commit: `feat: wire app navigation and conditional rendering`
 
