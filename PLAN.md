@@ -31,7 +31,7 @@ This plan follows the assignment sequence and separates manual implementation (P
   - [x] Logout -> `onNavigate('login')`
 - [x] Create `Footer` component in `components/Footer/Footer.jsx` with current year copyright.
 - [ ] Verify Header button behavior.
-- [ ] Commit: `feat: add header and footer components`
+- [x] Commit: `feat: add header and footer components`
 
 ## 3. Part 1 (Manual): App Conditional Rendering
 - [x] In `App.jsx`, create `currentPage` state with `useState`.
@@ -41,7 +41,7 @@ This plan follows the assignment sequence and separates manual implementation (P
   - [x] `register` -> `<Register />`
 - [x] Render `Footer` at the bottom of layout.
 - [ ] Verify navigation between Login and Register.
-- [ ] Commit: `feat: wire app navigation and conditional rendering`
+- [x] Commit: `feat: wire app navigation and conditional rendering`
 
 ## 4. Part 2 (AI-Assisted): Copilot Instructions
 - [ ] In Agent Mode, run `/init` to generate `AGENTS.md`.
