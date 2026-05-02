@@ -15,9 +15,11 @@ function Register() {
   };
 
   return (
-    <div className="auth-container">
+    <div className="auth-container auth-page">
       <div className="auth-box">
-        <h2>Register</h2>
+        <p className="auth-kicker">ThreadHive Community</p>
+        <h2>Create Account</h2>
+        <p className="auth-subtitle">Join the conversation today.</p>
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
           <input

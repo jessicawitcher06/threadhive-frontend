@@ -47,9 +47,11 @@ function ResetPassword({ onResetPassword }) {
   };
 
   return (
-    <div className="auth-container">
+    <div className="auth-container auth-page">
       <div className="auth-box">
+        <p className="auth-kicker">ThreadHive Community</p>
         <h2>Reset Password</h2>
+        <p className="auth-subtitle">Enter your details to set a new password.</p>
         <form onSubmit={handleSubmit}>
           <label htmlFor="reset-email">Email</label>
           <input
