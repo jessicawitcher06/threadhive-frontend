@@ -46,7 +46,7 @@ This plan follows the assignment sequence and separates manual implementation (P
 ## 4. Part 2 (AI-Assisted): Copilot Instructions
 - [x] Generate `AGENTS.md` (equivalent to `/init` output).
 - [x] Review and keep React/frontend conventions (functional components, styling/state conventions).
-- [ ] Commit: `chore: add frontend copilot instructions`
+- [x] Commit: `chore: add frontend copilot instructions`
 
 ## 5. Part 2 (AI-Assisted): Reset Password Page
 - [ ] Generate `pages/Auth/ResetPassword.jsx` via Copilot Agent prompt.
