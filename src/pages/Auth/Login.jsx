@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./Auth.css";
-import loginPlaceholderImage from '../../../resources/login-placeholder.jpg';
+import loginPlaceholderImage from '../../../resources/login-collaboration.jpg';
 
 function Login() {
   // Define relevant state variables for login form
