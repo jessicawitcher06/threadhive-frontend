@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./Auth.css";
+import registerImage from '../../../resources/register-welcome.jpg';
 
 function Register() {
   const [form, setForm] = useState({ name: '', email: '', password: '' });
@@ -16,10 +17,11 @@ function Register() {
 
   return (
     <div className="auth-container auth-page">
-      <div className="auth-box">
-        <p className="auth-kicker">ThreadHive Community</p>
-        <h2>Create Account</h2>
-        <p className="auth-subtitle">Join the conversation today.</p>
+      <div className="auth-split-shell">
+        <div className="auth-box">
+          <p className="auth-kicker">ThreadHive Community</p>
+          <h2>Create Account</h2>
+          <p className="auth-subtitle">Join the conversation today.</p>
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
           <input
@@ -53,6 +55,10 @@ function Register() {
           />
           <button type="submit">Register</button>
         </form>
+        </div>
+        <aside className="auth-split-visual-panel" aria-hidden="true">
+          <img src={registerImage} alt="" />
+        </aside>
       </div>
     </div>
   );

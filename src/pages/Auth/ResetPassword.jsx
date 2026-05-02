@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Auth.css';
+import resetImage from '../../../resources/reset-password-security.jpg';
 
 function ResetPassword({ onResetPassword }) {
   const [form, setForm] = useState({
@@ -48,10 +49,11 @@ function ResetPassword({ onResetPassword }) {
 
   return (
     <div className="auth-container auth-page">
-      <div className="auth-box">
-        <p className="auth-kicker">ThreadHive Community</p>
-        <h2>Reset Password</h2>
-        <p className="auth-subtitle">Enter your details to set a new password.</p>
+      <div className="auth-split-shell">
+        <div className="auth-box">
+          <p className="auth-kicker">ThreadHive Community</p>
+          <h2>Reset Password</h2>
+          <p className="auth-subtitle">Enter your details to set a new password.</p>
         <form onSubmit={handleSubmit}>
           <label htmlFor="reset-email">Email</label>
           <input
@@ -100,8 +102,12 @@ function ResetPassword({ onResetPassword }) {
           <button type="submit">Reset Password</button>
         </form>
 
-        {error && <p>{error}</p>}
-        {isSuccess && <p>Password reset successful.</p>}
+          {error && <p>{error}</p>}
+          {isSuccess && <p>Password reset successful.</p>}
+        </div>
+        <aside className="auth-split-visual-panel" aria-hidden="true">
+          <img src={resetImage} alt="" />
+        </aside>
       </div>
     </div>
   );
