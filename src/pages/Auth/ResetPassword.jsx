@@ -22,6 +22,12 @@ function ResetPassword({ onResetPassword }) {
   const handleSubmit = e => {
     e.preventDefault();
 
+    if (form.oldPassword === form.newPassword) {
+      setIsSuccess(false);
+      setError('New password must be different from old password.');
+      return;
+    }
+
     if (form.newPassword !== form.confirmPassword) {
       setIsSuccess(false);
       setError('New password and confirm password must match.');
