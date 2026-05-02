@@ -10,13 +10,13 @@ This plan follows the assignment sequence and separates manual implementation (P
 - [x] Commit: `chore: initialize starter project`
 
 ## 1. Part 1 (Manual): Login Component
-- [ ] Implement `email` and `password` state using `useState` in the Login page.
-- [ ] Build controlled form fields for email and password.
-- [ ] Add submit handler to:
-  - [ ] prevent default form behavior
-  - [ ] log email/password to console
-  - [ ] show success alert
-- [ ] Verify form input and submit behavior in browser.
+- [x] Implement `email` and `password` state using `useState` in the Login page.
+- [x] Build controlled form fields for email and password.
+- [x] Add submit handler to:
+  - [x] prevent default form behavior
+  - [x] log email/password to console
+  - [x] show success alert
+- [x] Verify form input and submit behavior in browser.
 - [ ] Commit: `feat: implement manual login form`
 
 ## 2. Part 1 (Manual): Header and Footer
