@@ -7,7 +7,7 @@ This plan follows the assignment sequence and separates manual implementation (P
 - [x] Initialize git repository (`git init`) if not already initialized.
 - [x] Install dependencies (`npm install`).
 - [x] Run app (`npm run dev`) and verify `http://localhost:5173` loads.
-- [ ] Commit: `chore: initialize starter project`
+- [x] Commit: `chore: initialize starter project`
 
 ## 1. Part 1 (Manual): Login Component
 - [ ] Implement `email` and `password` state using `useState` in the Login page.
