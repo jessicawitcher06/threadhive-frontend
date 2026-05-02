@@ -49,18 +49,18 @@ This plan follows the assignment sequence and separates manual implementation (P
 - [x] Commit: `chore: add frontend copilot instructions`
 
 ## 5. Part 2 (AI-Assisted): Reset Password Page
-- [ ] Generate `pages/Auth/ResetPassword.jsx` via Copilot Agent prompt.
-- [ ] Ensure controlled form fields exist:
-  - [ ] email
-  - [ ] old password
-  - [ ] new password
-  - [ ] confirm password
-- [ ] Add `onResetPassword` callback prop support.
-- [ ] Validate password match on submit:
-  - [ ] mismatch -> show inline error message
-  - [ ] match -> call callback and show success message
-- [ ] Add Header navigation entry for Reset Password.
-- [ ] Add `App.jsx` conditional rendering for reset password page.
+- [x] Generate `pages/Auth/ResetPassword.jsx` via Copilot Agent prompt.
+- [x] Ensure controlled form fields exist:
+  - [x] email
+  - [x] old password
+  - [x] new password
+  - [x] confirm password
+- [x] Add `onResetPassword` callback prop support.
+- [x] Validate password match on submit:
+  - [x] mismatch -> show inline error message
+  - [x] match -> call callback and show success message
+- [x] Add Header navigation entry for Reset Password.
+- [x] Add `App.jsx` conditional rendering for reset password page.
 - [ ] Test mismatch and success flows in browser.
 - [ ] Commit: `feat: add reset password page and navigation`
 

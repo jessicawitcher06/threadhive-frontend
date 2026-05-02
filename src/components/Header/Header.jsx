@@ -6,6 +6,7 @@ function Header({ onNavigate }) {
   // Dummy authentication variable. Will be eventually replaced with actual authentication logic.
   const handleLoginClick = () => onNavigate('login');
   const handleRegisterClick = () => onNavigate('register');
+  const handleResetPasswordClick = () => onNavigate('reset-password');
   const handleLogoutClick = () => onNavigate('login');
 
   return (
@@ -18,6 +19,7 @@ function Header({ onNavigate }) {
           <>
             <button type="button" onClick={handleLoginClick}>Login</button>
             <button type="button" onClick={handleRegisterClick}>Register</button>
+            <button type="button" onClick={handleResetPasswordClick}>Reset Password</button>
           </>
         )}
         {isAuthenticated && (
