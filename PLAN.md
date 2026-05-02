@@ -17,7 +17,7 @@ This plan follows the assignment sequence and separates manual implementation (P
   - [x] log email/password to console
   - [x] show success alert
 - [x] Verify form input and submit behavior in browser.
-- [ ] Commit: `feat: implement manual login form`
+- [x] Commit: `feat: implement manual login form`
 
 ## 2. Part 1 (Manual): Header and Footer
 - [ ] Create `Header` component in `components/Header/Header.jsx`.
