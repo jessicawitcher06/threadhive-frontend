@@ -171,9 +171,18 @@
 }
 
 .login-submit {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 18px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
   background-color: var(--login-primary);
+  border: none;
   border-radius: 10px;
-  margin-top: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
 }
 
 .login-submit:hover {
