@@ -74,15 +74,15 @@ This plan follows the assignment sequence and separates manual implementation (P
 - [x] Commit: `style: redesign login page from visual reference`
 
 ## 7. Part 2 (AI-Assisted): Testing Agent + Unit Tests
-- [ ] Create custom agent via:
+- [x] Create custom agent via:
   - `/create-agent Create an agent called 'react-testing-agent' that creates unit tests for React components. Use React Testing Library and Vitest. Keep tests in top-level tests/ directory. Keep agent workspace scoped.`
-- [ ] Verify agent file at `.github/agents/react-testing-agent.agent.md`.
-- [ ] Generate Login component unit tests for:
-  - [ ] render test (email/password fields present)
-  - [ ] input capture test (controlled values update)
-  - [ ] successful submit test (submits correct data)
-- [ ] Run test suite (`npm run test`).
-- [ ] If failing, iterate using Copilot with error output and adjust tests to component behavior.
+- [x] Verify agent file at `.github/agents/react-testing-agent.agent.md`.
+- [x] Generate Login component unit tests for:
+  - [x] render test (email/password fields present)
+  - [x] input capture test (controlled values update)
+  - [x] successful submit test (submits correct data)
+- [x] Run test suite (`npm run test`).
+- [x] If failing, iterate using Copilot with error output and adjust tests to component behavior.
 - [ ] Optional: generate tests for Register and Reset Password.
 - [ ] Commit: `test: add auth component unit tests`
 

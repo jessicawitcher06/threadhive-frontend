@@ -8,13 +8,44 @@ import Register from '../src/pages/Auth/Register';
 describe('Auth Components', () => {
   describe('Login Component', () => {
     it('renders the login form fields', () => {
-      //Todo: Render Login component and verify all form fields are present
+      render(<Login />);
 
+      expect(screen.getByLabelText(/email/i)).toBeInTheDocument();
+      expect(screen.getByLabelText(/password/i)).toBeInTheDocument();
+      expect(screen.getByRole('button', { name: /login/i })).toBeInTheDocument();
     });
 
-    it('logs email and password on submit', async () => {
-      //Todo: Spy on console.log, simulate user input and form submission, then verify the correct data is logged
+    it('captures user input in controlled login fields', async () => {
+      render(<Login />);
 
+      const emailInput = screen.getByLabelText(/email/i);
+      const passwordInput = screen.getByLabelText(/password/i);
+
+      await userEvent.type(emailInput, 'jane@example.com');
+      await userEvent.type(passwordInput, 'securePassword123');
+
+      expect(emailInput).toHaveValue('jane@example.com');
+      expect(passwordInput).toHaveValue('securePassword123');
+    });
+
+    it('submits the correct login data', async () => {
+      const logSpy = vi.spyOn(console, 'log').mockImplementation(() => {});
+      const alertSpy = vi.spyOn(window, 'alert').mockImplementation(() => {});
+
+      render(<Login />);
+
+      await userEvent.type(screen.getByLabelText(/email/i), 'jane@example.com');
+      await userEvent.type(screen.getByLabelText(/password/i), 'securePassword123');
+      await userEvent.click(screen.getByRole('button', { name: /login/i }));
+
+      expect(logSpy).toHaveBeenCalledWith('Login submitted:', {
+        email: 'jane@example.com',
+        password: 'securePassword123',
+      });
+      expect(alertSpy).toHaveBeenCalledWith('Login successful!');
+
+      logSpy.mockRestore();
+      alertSpy.mockRestore();
     });
   });
 
