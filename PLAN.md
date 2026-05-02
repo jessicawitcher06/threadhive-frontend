@@ -30,7 +30,7 @@ This plan follows the assignment sequence and separates manual implementation (P
   - [x] Register -> `onNavigate('register')`
   - [x] Logout -> `onNavigate('login')`
 - [x] Create `Footer` component in `components/Footer/Footer.jsx` with current year copyright.
-- [ ] Verify Header button behavior.
+- [x] Verify Header button behavior.
 - [x] Commit: `feat: add header and footer components`
 
 ## 3. Part 1 (Manual): App Conditional Rendering
@@ -40,12 +40,12 @@ This plan follows the assignment sequence and separates manual implementation (P
   - [x] `login` -> `<Login />`
   - [x] `register` -> `<Register />`
 - [x] Render `Footer` at the bottom of layout.
-- [ ] Verify navigation between Login and Register.
+- [x] Verify navigation between Login and Register.
 - [x] Commit: `feat: wire app navigation and conditional rendering`
 
 ## 4. Part 2 (AI-Assisted): Copilot Instructions
-- [ ] In Agent Mode, run `/init` to generate `AGENTS.md`.
-- [ ] Review and keep React/frontend conventions (functional components, styling/state conventions).
+- [x] Generate `AGENTS.md` (equivalent to `/init` output).
+- [x] Review and keep React/frontend conventions (functional components, styling/state conventions).
 - [ ] Commit: `chore: add frontend copilot instructions`
 
 ## 5. Part 2 (AI-Assisted): Reset Password Page
