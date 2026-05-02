@@ -61,15 +61,15 @@ This plan follows the assignment sequence and separates manual implementation (P
   - [x] match -> call callback and show success message
 - [x] Add Header navigation entry for Reset Password.
 - [x] Add `App.jsx` conditional rendering for reset password page.
-- [ ] Test mismatch and success flows in browser.
+- [x] Test mismatch and success flows in browser.
 - [x] Commit: `feat: add reset password page and navigation`
 
 ## 6. Part 2 (AI-Assisted): Multimodal Styling
-- [ ] Attach `resources/login-screenshot.png` in Agent Mode and prompt layout-based redesign of Login page.
-- [ ] Add an Unsplash placeholder image into `resources/` and use it in Login layout.
-- [ ] Keep layout inspired by screenshot; do not clone exact colors/typography.
-- [ ] Adapt changes to existing CSS Modules structure.
-- [ ] Follow-up multimodal prompt: move labels into placeholders while retaining styling intent.
+- [x] Use `resources/login-screenshot.png` as the layout reference for Login redesign.
+- [x] Add an Unsplash placeholder image into `resources/` and use it in Login layout.
+- [x] Keep layout inspired by screenshot; do not clone exact colors/typography.
+- [x] Adapt changes to existing CSS Modules structure.
+- [x] Follow-up multimodal goal: move labels into placeholders while retaining styling intent.
 - [ ] Verify desktop and mobile layout behavior.
 - [ ] Commit: `style: redesign login page from visual reference`
 

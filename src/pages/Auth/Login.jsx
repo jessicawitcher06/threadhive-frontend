@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./Auth.css";
+import loginPlaceholderImage from '../../../resources/login-placeholder.jpg';
 
 function Login() {
   // Define relevant state variables for login form
@@ -14,32 +15,41 @@ function Login() {
   };
 
   return (
-    <div className="auth-container">
-      <div className="auth-box">
-        <h2>Login</h2>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="login-email">Email</label>
-          <input
-            id="login-email"
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={e => setEmail(e.target.value)}
-            required
-          />
+    <div className="auth-container login-page">
+      <div className="login-shell">
+        <section className="login-form-panel">
+          <p className="login-kicker">ThreadHive Community</p>
+          <h2>Welcome Back</h2>
+          <p className="login-subtitle">Sign in to continue your conversations.</p>
 
-          <label htmlFor="login-password">Password</label>
-          <input
-            id="login-password"
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={e => setPassword(e.target.value)}
-            required
-          />
+          <form className="login-form" onSubmit={handleSubmit}>
+            <label htmlFor="login-email">Email</label>
+            <input
+              id="login-email"
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+              required
+            />
 
-          <button type="submit">Login</button>
-        </form>
+            <label htmlFor="login-password">Password</label>
+            <input
+              id="login-password"
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={e => setPassword(e.target.value)}
+              required
+            />
+
+            <button className="login-submit" type="submit">Login</button>
+          </form>
+        </section>
+
+        <aside className="login-visual-panel" aria-hidden="true">
+          <img src={loginPlaceholderImage} alt="" />
+        </aside>
       </div>
     </div>
   );
