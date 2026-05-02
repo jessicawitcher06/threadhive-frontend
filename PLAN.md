@@ -84,7 +84,7 @@ This plan follows the assignment sequence and separates manual implementation (P
 - [x] Run test suite (`npm run test`).
 - [x] If failing, iterate using Copilot with error output and adjust tests to component behavior.
 - [ ] Optional: generate tests for Register and Reset Password.
-- [ ] Commit: `test: add auth component unit tests`
+- [x] Commit: `test: add auth component unit tests`
 
 ## 8. Final Validation Checklist
 - [ ] Run app and manually verify navigation and form flows.
